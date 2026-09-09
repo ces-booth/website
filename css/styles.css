@@ -460,7 +460,7 @@ p { margin: 0 0 1em; max-width: 62ch; }
 .hero-banner p {
   color: rgba(255,255,255,0.88);
   font-size: 17px;
-  max-width: 56ch;
+  max-width: none;
   margin: 0;
 }
 
