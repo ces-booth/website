@@ -446,6 +446,7 @@ p { margin: 0 0 1em; max-width: 62ch; }
 .hero-banner .container {
   position: relative;
   z-index: 2;
+  width: 100%;
   padding-top: 72px;
   padding-bottom: 48px;
 }
