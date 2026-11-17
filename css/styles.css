@@ -895,3 +895,54 @@ hr.rule {
   .logo-grid { grid-template-columns: 1fr 1fr; }
   .hero-split-text h1, .hero-banner h1 { font-size: 30px; }
 }
+
+/* ==========================================================================
+   Conference page
+   ========================================================================== */
+
+.conf-intro {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 64px;
+  align-items: start;
+}
+
+.conf-intro p { font-size: 17px; color: var(--ink-soft); max-width: 62ch; }
+
+.conf-details {
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 28px;
+}
+
+.conf-details dl { margin: 0 0 24px; }
+.conf-details dt { font-size: 13px; color: var(--ink-soft); margin-top: 14px; }
+.conf-details dd { margin: 2px 0 0; font-weight: 500; }
+
+.panel-title { font-size: 24px; margin-bottom: 20px; }
+
+.speaker-role {
+  font-size: 14.5px;
+  color: var(--ink-soft);
+  margin: 6px 0 0;
+}
+
+.chat-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px 40px;
+}
+
+.chat-list li { font-size: 15px; color: var(--ink-soft); margin: 0; }
+.chat-list strong { display: block; color: var(--ink); font-weight: 600; }
+
+.conf-cta { text-align: center; padding-top: 24px; }
+.conf-cta p { margin: 0 auto 20px; font-size: 18px; }
+
+@media (max-width: 860px) {
+  .conf-intro { grid-template-columns: 1fr; gap: 32px; }
+  .chat-list { grid-template-columns: 1fr; }
+}
